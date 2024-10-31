@@ -4,20 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="output.css">
 </head>
-<body>
-    <div>
+<body class="flex items-center justify-center min-h-screen bg-gray-300">
+    <div class="w-full max-w-sm p-7 bg-white rounded shadow">
+        <h1 class="text-center text-2xl">Login</h1>
+        <hr>
         <form>
-            <h1>Login</h1>
-            <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" required />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite seu e-mail" required />
-            <a href="/">Esqueci minha senha</a>
-            <button>Acessar</button>
+            <p class="text-center p-3">Digite os seus dados de acesso no campo abaixo.</p>
+
+            <div class="m-2">
+            <label class="block bg-gray-200 text-black rounded text-center" for="email">E-mail</label>
+            <input type="email" placeholder="Digite seu e-mail" required id="email" />
+            </div>
+
+            <div class="m-2">
+            <label class="block  bg-gray-200 text-black rounded text-center" for="password">Senha</label>
+            <input type="password" placeholder="Digite seu e-mail" required id="senha" />
+            </div>
+            <button type="submit" class="w-full px-4 py-2 font-semibold text-white bg-blue-500 rounded hover:bg-blue-600">Entrar</button>
+            <a class="block text-center m-4 hover:underline hover:text-blue-800 " href="/">Esqueci minha senha</a>
         </form>
     </div>
-    
+
+    <script src="./script.js"></script>
 </body>
 </html>
